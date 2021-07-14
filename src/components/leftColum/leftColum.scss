@@ -1,0 +1,114 @@
+.columns {
+  &__left {
+    flex: 0 1 30.77%;
+  }
+
+  &__leftItems {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+    padding: 20px;
+    text-transform: uppercase;
+    span,
+    label {
+      padding-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.check {
+  margin-left: 30px;
+  cursor: pointer;
+  &__input {
+    
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    &:checked + .check__box {
+      background-repeat: no-repeat;
+      background-position: center;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 4px;
+        width: 8px;
+        height: 12px;
+        border: solid #2196f3;
+        border-width: 0 1px 1px 0;
+        transform: rotate(45deg);
+      }
+    }
+    &:focus + .check__box {
+      border: 1px solid #2196f3;
+    }
+    &:checked:focus + .check__box {
+      border: 1px solid #2196f3;
+    }
+    &:disabled + .check__box {
+      border: 1px solid darkgra;
+      background-color: darkgray;
+    }
+    &:checked:disabled + .check__box {
+      border: 1px solid darkgra;
+      background-color: darkgray;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 4px;
+        width: 8px;
+        height: 12px;
+        border: solid #fff;
+        border-width: 0 1px 1px 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__box {
+    margin-left: -30px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9abbce;
+    border-radius: 2px;
+    position: relative;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 737px) {
+  .columns {
+    &__leftItems {
+      padding: 10px;
+    }
+  }
+}
+@media (max-width: 530px) {
+  .columns {
+    &__leftItems {
+      margin-bottom: 20px;
+      margin-left: 30%;
+      margin-right: 20%;
+    }
+  }
+}
+@media (max-width: 350px) {
+  .columns {
+    &__leftItems {
+      span,
+      label {
+        padding-bottom: 5px;
+      }
+    }
+  }
+}

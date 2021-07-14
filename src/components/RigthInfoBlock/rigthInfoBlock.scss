@@ -1,0 +1,128 @@
+.columns {
+  &__rigthInfoBlock {
+  }
+  &__rigthInfoItems {
+    background: #ffffff;
+    padding: 26px 50px 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  &__rigthInfoPriseAndLogo {
+    display: flex;
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 26px;
+  }
+  &__rigthInfoFlight {
+    display: flex;
+  }
+  &__rigthInfoPrise {
+    font-size: 24px;
+    display: flex;
+    color: #2196f3;
+    flex: 0 1 77.8%;
+    align-items: center;
+  }
+
+  &__rigthInfoLogo {
+    width: 116px;
+    height: 36px;
+  }
+  &__rigthInfoImg {
+    margin-left: -10px;
+  }
+  &__rigthInfoCity {
+    flex: 0 0 43.33%;
+  }
+
+  &__rigthInfoInTransit {
+    flex: 0 0 33.33%;
+  }
+
+  &__rigthInfoInTransfer {
+    flex: 0 0 33.33%;
+  }
+
+  &__rigthInfoTimer {
+    flex: 0 0 43.33%;
+  }
+
+  &__rigthInfoTotalTime {
+    flex: 0 0 33.33%;
+  }
+
+  &__rigthInfoInTransferCitiy {
+    padding-right: 0px;
+    padding-bottom: 10px;
+    flex: 0 0 33.33%;
+  }
+}
+@media (max-width: 1065px) {
+  .columns {
+    &__rigthInfoImg {
+      margin: 0px;
+      margin-left: 0px;
+    }
+  }
+}
+
+@media (max-width: 737px) {
+  .columns {
+    &__rigthInfoPrise {
+      align-items: center;
+    }
+    &__rigthInfoItems {
+      padding: 16px 20px 10px 20px;
+    }
+    &__rigthInfoPriseAndLogo {
+      display: flex;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &__rigthInfoTimer {
+      flex: 0 0 38.33%;
+    }
+    &__rigthInfoCity {
+      flex: 0 0 38.33%;
+    }
+    &__rigthInfoPrise {
+      flex: 0 0 65.33%;
+    }
+    &__rigthInfoInTransferCitiy {
+      margin-left: -15px;
+    }
+    &__rigthInfoInTransfer {
+      margin-left: -15px;
+    }
+  }
+}
+
+@media (max-width: 435px) {
+  .columns {
+    &__rigthInfoTimer {
+      flex: 0 0 33.33%;
+    }
+    &__rigthInfoCity {
+      flex: 0 0 33.33%;
+    }
+    &__rigthInfoItems {
+      margin-bottom: 10px;
+    }
+    &__rigthInfoPrise {
+      flex: 0 0 60.33%;
+    }
+  }
+}
+@media (max-width: 350px) {
+  .columns {
+    &__rigthInfoItems {
+      padding: 5px 5px 5px 5px;
+    }
+    &__rigthInfoInTransferCitiy{
+      padding-bottom: 0px;
+    }
+    &__rigthInfoPriseAndLogo{
+      padding-bottom: 5px;
+    }
+  }
+}

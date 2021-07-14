@@ -1,0 +1,33 @@
+.columns {
+  &__rigthButtom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  &__rigthButtomCheap,
+  &__rigthButtomFast {
+    width: 50%;
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: 1px solid #dfe5ec;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    &:active,
+    &:focus,
+    &:hover {
+      border: 1px solid #dfe5ec;
+      background-color: #fff;
+      background: #2196f3;
+      outline: none;
+      color: #fff;  
+      cursor: pointer;
+    }
+  }
+}
+.activ{
+  background: #2196f3;
+  color: #fff;  
+}
